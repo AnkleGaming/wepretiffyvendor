@@ -168,7 +168,7 @@ const OnService = () => {
         OrderID: orderId,
         Price: "",
         Quantity: "",
-        Status: "Pending1",
+        Status: "Completed",
         VendorPhone: UserID,
         BeforVideo: "",
         AfterVideo: "",
@@ -229,7 +229,7 @@ const OnService = () => {
                   index={index}
                   onVideoClick={openVideoModal}
                   onPayment={openPaymentModal}
-                  onUpdateItem={openUpdateItem}
+                  onUpdateItem={handleUpdateItem}
                   uploadedBefore={uploadedBefore}
                   uploadedAfter={uploadedAfter}
                   onVideoUploaded={(orderId, type) => {
@@ -346,8 +346,8 @@ const GroupedOrderCard = ({
         {/* 1. Record Before Video */}
 
         <button
-          onClick={() => onVideoClick(order, "Before")}
-          className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:shadow-lg transition"
+          onClick={() => onUpdateItem(order.OrderID)}
+          className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 rounded-xl font-medium flex items-center justify-center gap-2 hover:shadow-lg transition hover:cursor-pointer"
         >
           Complete Service
         </button>

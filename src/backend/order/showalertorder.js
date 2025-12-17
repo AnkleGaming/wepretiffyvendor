@@ -86,7 +86,7 @@ const GetAlertOrder = async (orderId) => {
 
   try {
     const response = await axios.post(
-      "https://api.weprettify.com/APIs/APIs.asmx/ShowOrdersAlert",
+      "https://api.weprettify.com/APIs/APIs.asmx/ShowOrderAlert",
       formData,
       {
         headers: { "Content-Type": "application/x-www-form-urlencoded" },

@@ -329,7 +329,7 @@ const OrderCard = ({ order, index, onStart, onCancel }) => {
         {/* Scheduled Slot */}
         <div className="flex items-center justify-between pt-3 border-t border-gray-200 mb-6">
           <span className="text-gray-600 text-xs flex items-center gap-1">
-            <Calendar size={14} className="text-orange-500" />
+            <Calendar size={14} className="text-purple-500" />
             Scheduled
           </span>
           <div className="text-right">

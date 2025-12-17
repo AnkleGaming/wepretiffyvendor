@@ -64,7 +64,7 @@ const TabBar = ({ onTabChange }) => {
       </div>
 
       {/* Optional: Subtle Bottom Glow */}
-      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-gradient-to-t from-orange-300/20 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-8 bg-gradient-to-t from-purple-300/20 to-transparent blur-3xl pointer-events-none" />
     </div>
   );
 };

@@ -508,7 +508,7 @@ const UserProfile = () => {
             >
               My Profile
             </h1>
-            <div className={`w-20 h-1 bg-[#FA7D09] rounded-full mt-2`} />{" "}
+            <div className={`w-20 h-1 bg-purple-500 rounded-full mt-2`} />{" "}
             {/* No matching color in COLORS, using fallback */}
           </div>
         </motion.div>
@@ -521,7 +521,7 @@ const UserProfile = () => {
           className="flex flex-col items-center mb-10"
         >
           <motion.div
-            className={`relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-[#FA7D09] shadow-lg cursor-pointer group`}
+            className={`relative w-28 h-28 sm:w-32 sm:h-32 rounded-full overflow-hidden border-2 border-purple-500 shadow-lg cursor-pointer group`}
             whileHover={{ scale: 1.05 }}
             aria-label="Change profile picture"
           >
@@ -565,7 +565,7 @@ const UserProfile = () => {
             >
               <motion.div
                 onClick={() => toggleSection(section.id)}
-                className={`p-4 sm:p-5 cursor-pointer flex items-center justify-between bg-gradient-to-r ${COLORS.primaryFrom} ${COLORS.primaryTo} ${COLORS.textWhite} transition-all duration-300 hover:from-[#E56A00] hover:to-[#C75A00]`}
+                className={`p-4 sm:p-5 cursor-pointer flex items-center justify-between bg-gradient-to-r ${COLORS.primaryFrom} ${COLORS.primaryTo} ${COLORS.textWhite} transition-all duration-300`}
                 whileHover={{ scale: 1.01 }}
                 aria-label={`Toggle ${section.title} section`}
               >
@@ -609,7 +609,7 @@ const UserProfile = () => {
             transition={{ duration: 0.5 }}
             className={`w-[150px] py-3 mt-6 text-center font-semibold rounded-xl 
         bg-gradient-to-r ${COLORS.primaryFrom} ${COLORS.primaryTo} ${COLORS.textWhite} 
-        hover:from-[#E56A00] hover:to-[#C75A00] 
+        hover:bg-gradient-to-r hover:from-purple-600 hover:to-purple-700
         active:scale-95 transition-all duration-300`}
           >
             <div className="flex items-center justify-center gap-2">

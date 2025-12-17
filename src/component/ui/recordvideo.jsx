@@ -353,7 +353,7 @@ const RecordVideo = ({
                 <motion.button
                   whileTap={{ scale: 0.95 }}
                   onClick={handleStopRecording}
-                  className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition"
+                  className="bg-gradient-to-r from-purple-500 to-red-600 text-white px-6 py-3 rounded-full font-semibold flex items-center gap-2 shadow-lg hover:shadow-xl transition"
                 >
                   <StopCircle size={20} />
                   Stop

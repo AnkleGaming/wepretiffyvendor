@@ -6,28 +6,20 @@ import ProductScreen from "./ui/products";
 import Nearby from "./vendor/nearby";
 import UserProfile from "./ui/userprofile";
 import { MdNearMe } from "react-icons/md";
+import Colors from "./core/constant";
 
 const navItems = [
   {
-    label: "HM",
+    label: "WP",
     icon: (
-      <div className="text-[10px] w-8 h-8 bg-gradient-to-br from-[#FA7D09] to-[#E56A00] text-white flex items-center justify-center rounded-full font-bold text-lg transition-all duration-300 group-hover:scale-110">
-        HM
+      <div className="text-[10px] w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-700 text-white flex items-center justify-center rounded-full font-bold text-lg transition-all duration-300 group-hover:scale-110">
+        WP
       </div>
     ),
     component: <Home />,
     notification: false,
   },
-  {
-    label: "Nearby hubs",
-    icon: (
-      <div className="text-[10px] w-8 h-8 bg-gradient-to-br from-[#FA7D09] to-[#E56A00] text-white flex items-center justify-center rounded-full font-bold text-lg transition-all duration-300 group-hover:scale-110">
-        <MdNearMe size={15} />
-      </div>
-    ),
-    component: <Nearby />,
-    notification: false,
-  },
+
   {
     label: "Profile",
     icon: (
@@ -62,7 +54,7 @@ const MobileNavbar = () => {
             key={item.label}
             onClick={() => setActiveTab(index)}
             className={`group flex flex-col items-center justify-center relative w-1/4 py-2 transition-all duration-300 hover:bg-indigo-50/70 rounded-xl ${
-              activeTab === index ? "text-indigo-700" : "text-gray-600"
+              activeTab === index ? "text-purple-700" : "text-gray-600"
             }`}
             aria-label={`${item.label} tab`}
             aria-current={activeTab === index ? "page" : undefined}
@@ -75,7 +67,7 @@ const MobileNavbar = () => {
             </div>
             <span
               className={`text-xs mt-2 font-medium transition-colors duration-300 ${
-                activeTab === index ? "font-semibold text-[#FA7D09]" : ""
+                activeTab === index ? "font-semibold text-purple-700" : ""
               } group-hover:text-indigo-700`}
             >
               {item.label}

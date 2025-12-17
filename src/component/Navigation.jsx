@@ -204,17 +204,17 @@ const Navigation = () => {
                   >
                     {item.label}
                     <span
-                      className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FA7D09] transition-all duration-300 group-hover:w-full`}
+                      className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-700 transition-all duration-300 group-hover:w-full`}
                     ></span>
                   </a>
                 ) : (
                   <Link
                     key={item.label}
                     to={item.to}
-                    className={`relative text-gray-700 hover:text-[#FA7D09] transition-colors duration-300 group`}
+                    className={`relative text-gray-700 hover:text-purple-700 transition-colors duration-300 group`}
                   >
                     {item.label}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[#FA7D09] transition-all duration-300 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-700 transition-all duration-300 group-hover:w-full"></span>
                   </Link>
                 )
               )}
@@ -233,13 +233,13 @@ const Navigation = () => {
                           : "https://via.placeholder.com/150?text=Avatar"
                       }
                       alt={user[0]?.fullname || "Profile"}
-                      className="w-11 h-11 rounded-full border-2 border-gray-200 group-hover:border-[#FA7D09] transition-all duration-300"
+                      className="w-11 h-11 rounded-full border-2 border-gray-200 group-hover:border-purple-700 transition-all duration-300"
                     />
-                    <span className="text-base font-medium text-gray-700 group-hover:text-[#FA7D09] transition-colors duration-300">
+                    <span className="text-base font-medium text-gray-700 group-hover:text-purple-700 transition-colors duration-300">
                       {user[0]?.fullname || ""}
                     </span>
                     <ChevronDown
-                      className={`w-5 h-5 text-gray-500 group-hover:text-[#FA7D09] transition-all duration-300 ${
+                      className={`w-5 h-5 text-gray-500 group-hover:text-purple-700 transition-all duration-300 ${
                         open ? "rotate-180" : ""
                       }`}
                     />
@@ -250,19 +250,19 @@ const Navigation = () => {
                     <div className="absolute right-0 mt-3 bg-white shadow-xl rounded-xl w-56 z-50 text-sm border border-gray-100 transform transition-all duration-300 scale-95 origin-top-right animate-in">
                       <Link
                         to="/userprofile"
-                        className={`block px-5 py-3 hover:bg-orange-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
+                        className={`block px-5 py-3 hover:bg-purple-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
                       >
                         My Profile
                       </Link>
                       {/* <Link
                         to="/vendorverification"
-                        className={`flex justify-between block px-5 py-3 hover:bg-orange-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
+                        className={`flex justify-between block px-5 py-3 hover:bg-purple-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
                       >
                         <span>Verification</span>
                       </Link> */}
                       <Link
                         to="/transactions"
-                        className={`flex justify-between items-center px-5 py-3 hover:bg-orange-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
+                        className={`flex justify-between items-center px-5 py-3 hover:bg-purple-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
                       >
                         <span>Wallet</span>
                         <span
@@ -273,13 +273,13 @@ const Navigation = () => {
                       </Link>
                       <Link
                         to="/contact"
-                        className={`flex justify-between block px-5 py-3 hover:bg-orange-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
+                        className={`flex justify-between block px-5 py-3 hover:bg-purple-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-gray-700 first:rounded-t-xl`}
                       >
                         <span>Contact</span>
                       </Link>
                       <button
                         onClick={handleLog}
-                        className={`block w-full text-left px-5 py-3 hover:bg-orange-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-red-500 last:rounded-b-xl`}
+                        className={`block w-full text-left px-5 py-3 hover:bg-purple-50 hover:text-${Colors.primaryMain} transition-colors duration-200 text-red-500 last:rounded-b-xl`}
                       >
                         Logout
                       </button>

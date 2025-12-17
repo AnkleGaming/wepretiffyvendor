@@ -91,7 +91,7 @@ const PersonalDetails = () => {
             </h3>
             <button
               onClick={handleEditClick}
-              className="flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-lg hover:bg-orange-200 transition font-medium"
+              className="flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-2 rounded-lg hover:bg-purple-200 transition font-medium"
             >
               <FaEdit /> Edit
             </button>
@@ -136,7 +136,7 @@ const PersonalDetails = () => {
                     type="date"
                     value={editedDetails.dob || ""}
                     onChange={(e) => handleInputChange("dob", e.target.value)}
-                    className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base focus:ring-2 focus:ring-orange-500 bg-white shadow-sm"
+                    className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base focus:ring-2 focus:ring-purple-500 bg-white shadow-sm"
                   />
                 ) : (
                   <input
@@ -149,7 +149,7 @@ const PersonalDetails = () => {
                     className={`w-full border border-gray-300 rounded-lg px-4 py-2 text-base focus:outline-none ${
                       !item.editable
                         ? "bg-gray-100 text-gray-500 cursor-not-allowed"
-                        : "focus:ring-2 focus:ring-orange-500 bg-white shadow-sm"
+                        : "focus:ring-2 focus:ring-purple-500 bg-white shadow-sm"
                     }`}
                   />
                 )}

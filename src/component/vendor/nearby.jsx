@@ -15,7 +15,7 @@ const VendorCard = ({ name, location, distance, onRequest, onLocation }) => {
             <h4 className="font-bold text-lg text-gray-900 truncate">{name}</h4>
             <p className="text-sm text-gray-600 truncate mt-1">{location}</p>
             {distance !== undefined && distance !== null && (
-              <p className="text-xs font-semibold text-orange-600 mt-2">
+              <p className="text-xs font-semibold text-purple-600 mt-2">
                 {parseFloat(distance).toFixed(2)} km away
               </p>
             )}
@@ -24,7 +24,7 @@ const VendorCard = ({ name, location, distance, onRequest, onLocation }) => {
           <div className="flex gap-3">
             <button
               onClick={onRequest}
-              className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold text-sm py-3 rounded-xl hover:shadow-lg transition-all"
+              className="flex-1 flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-red-500 text-white font-semibold text-sm py-3 rounded-xl hover:shadow-lg transition-all"
             >
               <FiSend size={16} />
               Send Request
@@ -160,7 +160,7 @@ const NearbyScreen = ({ onVendorSelect }) => {
         <div className="max-w-2xl mx-auto mb-10">
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="flex-1">
-              <div className="flex items-center border-2 border-gray-300 rounded-2xl px-5 py-4 bg-white shadow-md focus-within:border-orange-500 focus-within:shadow-xl transition-all">
+              <div className="flex items-center border-2 border-gray-300 rounded-2xl px-5 py-4 bg-white shadow-md focus-within:border-purple-500 focus-within:shadow-xl transition-all">
                 <FiSearch className="text-gray-500 mr-3" size={24} />
                 <input
                   type="text"
@@ -175,7 +175,7 @@ const NearbyScreen = ({ onVendorSelect }) => {
             <button
               onClick={handleSearch}
               disabled={!inputValue.trim()}
-              className="px-10 py-4 bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold text-lg rounded-2xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+              className="px-10 py-4 bg-gradient-to-r from-purple-500 to-red-600 text-white font-bold text-lg rounded-2xl hover:shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed transition-all"
             >
               Search
             </button>
@@ -211,7 +211,7 @@ const NearbyScreen = ({ onVendorSelect }) => {
         {loading && !isInitialLoad && (
           <div className="fixed top-4 right-4 z-50 pointer-events-none">
             <div className="bg-white/95 backdrop-blur-md px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 border border-gray-200">
-              <div className="w-5 h-5 border-4 border-orange-500 border-t-transparent rounded-full animate-spin"></div>
+              <div className="w-5 h-5 border-4 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
               <span className="text-sm font-medium text-gray-700">
                 Updating nearby hubs...
               </span>

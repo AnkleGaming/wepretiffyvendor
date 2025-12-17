@@ -67,7 +67,7 @@ const PrivacyAndPolicy = () => {
             <p className="text-red-600 text-lg font-medium">{error}</p>
             <button
               onClick={() => window.location.reload()}
-              className={`mt-4 bg-${Colors.primaryMain} text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-600 hover:cursor-pointer transition-all duration-200`}
+              className={`mt-4 bg-${Colors.primaryMain} text-white font-semibold py-2 px-6 rounded-xl hover:bg-purple-600 hover:cursor-pointer transition-all duration-200`}
             >
               Retry
             </button>

@@ -71,7 +71,7 @@ const TransactionHistory = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="bg-gradient-to-r from-orange-500 to-pink-600 rounded-2xl p-5 sm:p-6 text-white shadow-xl"
+          className="bg-gradient-to-r from-purple-500 to-pink-600 rounded-2xl p-5 sm:p-6 text-white shadow-xl"
         >
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
             <div className="flex items-center gap-3">
@@ -99,7 +99,7 @@ const TransactionHistory = () => {
           <div className="max-h-96 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
             {isLoading ? (
               <div className="p-12 text-center">
-                <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-orange-500 border-t-transparent"></div>
+                <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-purple-500 border-t-transparent"></div>
               </div>
             ) : transactions.length === 0 ? (
               <div className="p-12 text-center text-gray-500">

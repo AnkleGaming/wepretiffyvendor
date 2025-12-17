@@ -132,7 +132,7 @@ const LoginCard = ({ onClose, onSubmit }) => {
 
             {/* Content */}
             <div className="mb-6">
-              {/* Brand Orange Icon */}
+              {/* Brand purple Icon */}
               <Phone className={`w-8 h-8 mb-3 ${colors.tableHeadText}`} />
               <h2
                 className={`text-2xl font-bold bg-gradient-to-r ${colors.primaryFrom} ${colors.primaryTo} bg-clip-text text-transparent`}
